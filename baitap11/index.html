@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-color: cornflowerblue;
+        }
+        button{
+            display: block;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function greetme(message){
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+    <form method="GET" action="">
+        <h2>Đăng nhập</h2>
+        <table border="1">
+            <tr>
+                <td>
+                    <label for="username">Mã người dùng</label>
+                </td>
+                <td>
+                    <input id="username" name="username" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Mật khẩu</label>
+                </td>
+                <td>
+                    <input id="password" name="password" type="password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="id1">
+                    <input type="button" value="Đăng nhập" id="login" onclick="greetme('default')">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

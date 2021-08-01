@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo bảng, trộn dòng và cột</title>
+    <style>
+        table{
+            border: 1px solid red;
+            border-collapse: collapse;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            font-weight: 20px;
+        }
+        h1{
+            text-align: center;
+            color: red;
+        }
+        #id1{
+            background-color:rgb(156, 9, 9);
+            color: white;
+        }
+        #id2{
+            background-color:rgb(156, 9, 9);
+            color: white;
+        }
+        #id3{
+            background-color: rgb(156, 9, 9);
+            color: white;
+        }
+        #id4{
+            background-color: rgb(156, 9, 9);
+            color: white;
+        }
+        #id5{
+            background-color: rgb(156, 9, 9);
+            color: white;
+        }
+        #id6{
+            color: red;
+        }
+        #id7{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chương trình học - ngành lập trình</h1>
+    <table border="1" width="100%">
+        <tr>
+            <td rowspan="2" id="id1">Nhóm học phần</td>
+            <td rowspan="2" id="id2">Môn học</td>
+            <td colspan="2" id="id3">Số tiết</td>
+        </tr>
+        <tr>
+            <td id="id4">Lý thuyết</td>
+            <td id="id5">Thực hành</td>
+        </tr>
+        <tr>
+            <td rowspan="6" id="id6">Tin học văn phòng</td>
+            <td>Hệ điều hành Windows</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Sử dụng Internet</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Soạn Thảo văn bản với MS Word</td>
+            <td>24</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Tạo trình diễn với MS PowerPoint</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Xử Lý số liệu với MS Excel</td>
+            <td>24</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Tạo trang web với MS FrontPage</td>
+            <td>9</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td rowspan="2" id="id7">Kĩ thuật llập trình</td>
+            <td>Nhập môn lập trình</td>
+            <td>36</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Kĩ thuật lập trình</td>
+            <td>36</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td colspan="4">...</td>
+        </tr>
+    </table>
+</body>
+</html>

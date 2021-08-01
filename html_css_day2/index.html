@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, th, td{
+            border: 1px solid black;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        ul, li{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            background-color: black;
+        }
+        li{
+            display: inline;
+            padding: 10px;
+        }
+        li>a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- p, heading-->
+    <h1>HTML/CSS</h1>
+    <h2>Day 2</h2>
+    <h3>...</h3>
+    <h6>h6</h6>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam eaque quam laboriosam ipsa nemo, repellendus nulla accusamus maiores? Corporis illo consectetur dolore aperiam facere accusamus autem, pariatur dolorum optio quasi!</p>
+    <b>Thẻ b</b>
+    <strong>Thẻ strong</strong>
+    <i>Thẻ i</i>
+    <em>Thẻ em</em>
+    <small>small</small>
+    <mark>đánh dấu</mark>
+    <del>delete</del>
+    <ins>insert</ins>
+    <sub>sub</sub>
+    <sup>sup</sup>
+    <p>Công thức hoá học của nước: H<sup>2</sup>O</p>
+    <p>Công thức toán học : a <sup>2</sup>-b <sup>2</sup>= c <sup>2</sup></p>
+    <!-- image -->
+    <!-- externa link -->
+    <!-- <img src="https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1024x682.jpg" alt="background-Iimage.png"> -->
+    <img src="./images/ny.jpg" alt="">
+    <!-- Link -->
+    <a href="https://vnexpress.net/tien-minh-thua-tran-dau-o-olympic-2020-4330305-tong-thuat.html">Tiến minh thua cầu lông</a>
+    <a href="./about.html">about page</a>
+    <a href="#mark">go to neo</a>
+    <a href="/html_css_day2/about.html" target="_blank">about page</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores nulla nihil odit! Soluta error ducimus ratione earum? Iusto, laborum cumque molestias enim hic nam quas ipsa veritatis quia odio.</p>
+    <br><br><br><br><br><br><br><br><br><br>
+    <p id="mark">Neo</p>
+    <br><br><br><br><br><br><br><br><br><br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, repudiandae. Aut excepturi aliquam tenetur in magni laborum exercitationem. Accusamus modi error aliquid fuga tempora odio maiores in pariatur voluptates iste.</p>
+    <!-- list -->
+    <!-- unorder list -->
+    <ul style="list-style-type: none;">
+        <li>Home
+            <ul>
+                <li><a href="">Introdce</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Content</a></li>
+            </ul>
+        </li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <!-- order list -->
+    <ol type="a">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ol>
+    <!-- table -->
+    <table>
+        <caption>Student information</caption>
+        <thead>
+            <tr>
+                <th colspan="3">Information</th>
+            </tr>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>address</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>van linh</td>
+            <td rowspan="2">hn</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>quoc trung</td>
+            <!-- <td>hn</td> -->
+        </tr>
+        </tbody>
+    </table>
+    <!-- Layout -->
+
+    <!-- span, div -->
+    <span>content-inline</span>
+    <div>content-block</div>
+    <header>
+        header
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Service</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h3>Title</h3>
+            <p>Description</p>
+        </article>
+    </section>
+    <footer>
+        footer
+    </footer>
+    <!-- form -->
+    <form method="GET|POST|PUT|DELETE" action="">
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username">
+        <br>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+        <br>
+        <label for="number">number</label>
+        <input type="number" name="number" id="number" required min="1" max="10">
+        <select name="month" id="month">
+            <option value="0">select month</option>
+            <optgroup label="Spring">
+                <option value="1">thang 1</option>
+                <option value="2">thang 2</option>
+                <option value="3">thang 3</option>
+            </optgroup>
+            <optgroup label="Summer">
+            <option value="4">thang 4</option>
+            <option value="5">thang 5</option>
+            <option value="6">thang 6</option>
+            </optgroup>
+            <optgroup>
+            <option value="7">thang 7</option>
+            <option value="8">thang 8</option>
+            <option value="9">thang 9</option>
+            </optgroup>
+            <option value="10">thang 10</option>
+            <option value="11">thang 11</option>
+            <option value="12">thang 12</option>
+        </select>
+        <br>
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="gender">
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="gender">
+        <label for="policy">Do you agree with our policy </label>
+        <input id="policy" type="checkbox" name="gender">
+        <button>Login</button>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
